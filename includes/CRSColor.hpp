@@ -5,11 +5,11 @@
 
 namespace Ceres {
 	namespace Color {
-		constexpr VectorF32 red = Float32_4{ 1.0f, 0.0f, 0.0f, 1.0f };
-		constexpr VectorF32 green = Float32_4{ 0.0f, 1.0f, 0.0f, 1.0f };
-		constexpr VectorF32 blue = Float32_4{ 0.0f, 0.0f, 1.0f, 1.0f };
-		constexpr VectorF32 black = Float32_4{ 0.0f, 0.0f, 0.0f, 1.0f };
-		constexpr VectorF32 white = Float32_4{ 1.0f, 1.0f, 1.0f, 1.0f };
+		constexpr VectorF32 red = { 1.0f, 0.0f, 0.0f, 1.0f };
+		constexpr VectorF32 green = { 0.0f, 1.0f, 0.0f, 1.0f };
+		constexpr VectorF32 blue = { 0.0f, 0.0f, 1.0f, 1.0f };
+		constexpr VectorF32 black = { 0.0f, 0.0f, 0.0f, 1.0f };
+		constexpr VectorF32 white = { 1.0f, 1.0f, 1.0f, 1.0f };
 	}
 }
 

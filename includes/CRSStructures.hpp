@@ -9,6 +9,42 @@ namespace Ceres {
 		T y;
 		T z;
 		T w;
+
+		constexpr _struct4<T> operator+(const _struct4<T>& other) const noexcept {
+			return {
+				x + other.x,
+				y + other.y,
+				z + other.z,
+				w + other.w
+			};
+		}
+
+		constexpr _struct4<T> operator-(const _struct4<T>& other) const noexcept {
+			return {
+				x - other.x,
+				y - other.y,
+				z - other.z,
+				w - other.w
+			};
+		}
+
+		constexpr _struct4<T> operator*(const _struct4<T>& other) const noexcept {
+			return {
+				x * other.x,
+				y * other.y,
+				z * other.z,
+				w * other.w
+			};
+		}
+
+		constexpr _struct4<T> operator/(const _struct4<T>& other) const noexcept {
+			return {
+				x / other.x,
+				y / other.y,
+				z / other.z,
+				w / other.w
+			};
+		}
 	};
 
 	typedef _struct4<float> Float32_4;
@@ -27,6 +63,38 @@ namespace Ceres {
 		T x;
 		T y;
 		T z;
+
+		constexpr _struct3<T> operator+(const _struct3<T>& other) const noexcept {
+			return {
+				x + other.x,
+				y + other.y,
+				z + other.z
+			};
+		}
+
+		constexpr _struct3<T> operator-(const _struct3<T>& other) const noexcept {
+			return {
+				x - other.x,
+				y - other.y,
+				z - other.z
+			};
+		}
+
+		constexpr _struct3<T> operator*(const _struct3<T>& other) const noexcept {
+			return {
+				x * other.x,
+				y * other.y,
+				z * other.z
+			};
+		}
+
+		constexpr _struct3<T> operator/(const _struct3<T>& other) const noexcept {
+			return {
+				x / other.x,
+				y / other.y,
+				z / other.z
+			};
+		}
 	};
 
 	typedef _struct3<float> Float32_3;
@@ -44,6 +112,34 @@ namespace Ceres {
 	struct _struct2 {
 		T x;
 		T y;
+
+		constexpr _struct2<T> operator+(const _struct2<T>& other) const noexcept {
+			return {
+				x + other.x,
+				y + other.y
+			};
+		}
+
+		constexpr _struct2<T> operator-(const _struct2<T>& other) const noexcept {
+			return {
+				x - other.x,
+				y - other.y
+			};
+		}
+
+		constexpr _struct2<T> operator*(const _struct2<T>& other) const noexcept {
+			return {
+				x * other.x,
+				y * other.y
+			};
+		}
+
+		constexpr _struct2<T> operator/(const _struct2<T>& other) const noexcept {
+			return {
+				x / other.x,
+				y / other.y
+			};
+		}
 	};
 
 	typedef _struct2<float> Float32_2;

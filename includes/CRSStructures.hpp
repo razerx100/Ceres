@@ -56,6 +56,13 @@ namespace Ceres {
 	typedef _struct2<std::uint16_t> Uint16_2;
 	typedef _struct2<std::uint32_t> Uint32_2;
 	typedef _struct2<std::uint64_t> Uint64_2;
+
+	struct Rect {
+		std::uint64_t left;
+		std::uint64_t right;
+		std::uint64_t top;
+		std::uint64_t bottom;
+	};
 }
 
 #endif

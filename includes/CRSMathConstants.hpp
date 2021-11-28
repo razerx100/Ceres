@@ -1,7 +1,6 @@
 #ifndef __CERES_MATH_CONSTANTS_HPP__
 #define __CERES_MATH_CONSTANTS_HPP__
 #include <cstdint>
-#include <DirectXMath.h>
 
 namespace Ceres {
     namespace MathConstants {

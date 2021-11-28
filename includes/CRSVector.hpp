@@ -20,6 +20,11 @@ namespace Ceres {
 
 		constexpr operator Vector() const noexcept { return vec; }
 		constexpr operator Float32_4() const noexcept { return F32; }
+
+		constexpr VectorF32& operator=(const Vector& vec) noexcept {
+			this->vec = vec;
+			return *this;
+		}
 	};
 
 	inline Vector operator+(const Vector& vec1, const Vector& vec2) noexcept {

@@ -1,5 +1,5 @@
-#ifndef __CERES_MATH_CONSTANTS_HPP__
-#define __CERES_MATH_CONSTANTS_HPP__
+#ifndef __CERES_MATH_HPP__
+#define __CERES_MATH_HPP__
 #include <cstdint>
 
 namespace Ceres {

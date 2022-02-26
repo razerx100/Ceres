@@ -1,6 +1,9 @@
 #ifndef __CERES_MATH_HPP__
 #define __CERES_MATH_HPP__
 #include <cstdint>
+#include <concepts>
+#include <limits>
+#include <cmath>
 
 namespace Ceres {
     namespace Math {
@@ -13,6 +16,32 @@ namespace Ceres {
 
         constexpr size_t Align(size_t address, size_t alignment) noexcept {
             return (address + (alignment - 1u)) & ~(alignment - 1u);
+        }
+
+        template<std::floating_point T, std::floating_point Q>
+        bool nearlyEqual(T float1, Q float2) noexcept {
+            if constexpr (sizeof(T) > sizeof(Q)) {
+                T num1 = float1;
+                T num2 = static_cast<T>(float2);
+
+                return std::fabs(num1 - num2)
+                    < std::numeric_limits<T>::epsilon()
+                    * std::max(
+                        std::fabs(num1) + std::fabs(num2),
+                        std::numeric_limits<T>::max()
+                    );
+            }
+            else {
+                Q num1 = static_cast<Q>(float1);
+                Q num2 = float2;
+
+                return std::fabs(num1 - num2)
+                    < std::numeric_limits<Q>::epsilon()
+                    * std::max(
+                        std::fabs(num1) + std::fabs(num2),
+                        std::numeric_limits<Q>::max()
+                    );
+            }
         }
     }
 };

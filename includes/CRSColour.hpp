@@ -1,10 +1,10 @@
-#ifndef __CERES_COLOR_HPP__
-#define __CERES_COLOR_HPP__
+#ifndef __CERES_COLOUR_HPP__
+#define __CERES_COLOUR_HPP__
 #include <cstdint>
 #include "CRSVector.hpp"
 
 namespace Ceres {
-	namespace Color {
+	namespace Colour {
 		constexpr Float32_4 Black = { 0.0f, 0.0f, 0.0f, 1.0f };
 		constexpr Float32_4 Blue = { 0.0f, 0.0f, 1.0f, 1.0f };
 		constexpr Float32_4 Cyan = { 0.0f, 1.0f, 1.0f, 1.0f };

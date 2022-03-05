@@ -3,6 +3,7 @@
 #include <cstdint>
 #include <limits>
 #include <cmath>
+#include <concepts>
 
 namespace Ceres {
     namespace Math {
@@ -17,7 +18,7 @@ namespace Ceres {
             return (address + (alignment - 1u)) & ~(alignment - 1u);
         }
 
-        template<typename T, typename Q>
+        template<std::floating_point T, std::floating_point Q >
         bool nearlyEqual(T float1, Q float2) noexcept {
             if constexpr (sizeof(T) > sizeof(Q)) {
                 T num1 = float1;

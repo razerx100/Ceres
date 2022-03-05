@@ -45,19 +45,27 @@ namespace Ceres {
     }
 };
 
-constexpr size_t operator"" _B(unsigned long long number) {
+constexpr size_t operator"" _B(unsigned long long number) noexcept {
     return static_cast<size_t>(number);
 }
 
-constexpr size_t operator"" _KB(unsigned long long number) {
+constexpr size_t operator"" _KB(unsigned long long number) noexcept {
     return static_cast<size_t>(number * 1024u);
 }
 
-constexpr size_t operator"" _MB(unsigned long long number) {
+constexpr size_t operator"" _MB(unsigned long long number) noexcept {
     return static_cast<size_t>(number * 1024u * 1024u);
 }
 
-constexpr size_t operator"" _GB(unsigned long long number) {
+constexpr size_t operator"" _GB(unsigned long long number) noexcept {
     return static_cast<size_t>(number * 1024u * 1024u * 1024u);
+}
+
+constexpr long double operator"" _Radian(long double degree) noexcept {
+    return (1. / 180) * Ceres::Math::PI * degree;
+}
+
+constexpr long double operator"" _Degree(long double radian) noexcept {
+    return 180. / Ceres::Math::PI * radian;
 }
 #endif

@@ -1,7 +1,6 @@
 #ifndef __CERES_MATH_HPP__
 #define __CERES_MATH_HPP__
 #include <cstdint>
-#include <concepts>
 #include <limits>
 #include <cmath>
 
@@ -18,7 +17,7 @@ namespace Ceres {
             return (address + (alignment - 1u)) & ~(alignment - 1u);
         }
 
-        template<std::floating_point T, std::floating_point Q>
+        template<typename T, typename Q>
         bool nearlyEqual(T float1, Q float2) noexcept {
             if constexpr (sizeof(T) > sizeof(Q)) {
                 T num1 = float1;

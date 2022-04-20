@@ -1,5 +1,5 @@
-#ifndef __CERES_MATRIX_HPP__
-#define __CERES_MATRIX_HPP__
+#ifndef CERES_MATRIX_HPP_
+#define CERES_MATRIX_HPP_
 #include "CRSVector.hpp"
 
 namespace Ceres {

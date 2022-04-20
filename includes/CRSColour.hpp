@@ -1,5 +1,5 @@
-#ifndef __CERES_COLOUR_HPP__
-#define __CERES_COLOUR_HPP__
+#ifndef CERES_COLOUR_HPP_
+#define CERES_COLOUR_HPP_
 #include <cstdint>
 #include "CRSVector.hpp"
 

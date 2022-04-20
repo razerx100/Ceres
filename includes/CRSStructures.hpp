@@ -1,5 +1,5 @@
-#ifndef __CERES_STRUCTURES_HPP__
-#define __CERES_STRUCTURES_HPP__
+#ifndef CERES_STRUCTURES_HPP_
+#define CERES_STRUCTURES_HPP_
 #include <cstdint>
 
 namespace Ceres {

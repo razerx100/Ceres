@@ -1,5 +1,5 @@
-#ifndef __CERES_MATH_HPP__
-#define __CERES_MATH_HPP__
+#ifndef CERES_MATH_HPP_
+#define CERES_MATH_HPP_
 #include <cstdint>
 #include <limits>
 #include <cmath>

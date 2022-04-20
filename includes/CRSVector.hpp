@@ -1,5 +1,5 @@
-#ifndef __CERES_VECTOR_HPP__
-#define __CERES_VECTOR_HPP__
+#ifndef CERES_VECTOR_HPP_
+#define CERES_VECTOR_HPP_
 #include "CRSStructures.hpp"
 #include <xmmintrin.h>
 #include <emmintrin.h>
